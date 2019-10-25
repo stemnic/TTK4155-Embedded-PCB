@@ -1460,37 +1460,25 @@ Connection ~ 10900 5550
 $Comp
 L Connector:Screw_Terminal_01x02 J6
 U 1 1 5DD11A7E
-P 3550 700
-F 0 "J6" V 3550 350 50  0000 L CNN
-F 1 "Screw_Terminal_01x02" V 3700 100 50  0000 L CNN
-F 2 "TerminalBlock_MetzConnect:TerminalBlock_MetzConnect_Type073_RT02602HBLU_1x02_P5.08mm_Horizontal" H 3550 700 50  0001 C CNN
-F 3 "~" H 3550 700 50  0001 C CNN
-	1    3550 700 
-	0    -1   -1   0   
+P 8550 800
+F 0 "J6" V 8650 700 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" V 8750 200 50  0001 L CNN
+F 2 "TerminalBlock_MetzConnect:TerminalBlock_MetzConnect_Type073_RT02602HBLU_1x02_P5.08mm_Horizontal" H 8550 800 50  0001 C CNN
+F 3 "~" H 8550 800 50  0001 C CNN
+	1    8550 800 
+	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3550 900  3550 1000
-Wire Wire Line
-	3550 1000 3350 1000
 $Comp
 L power:GND #PWR0134
 U 1 1 5DD5A4AB
-P 3650 900
-F 0 "#PWR0134" H 3650 650 50  0001 C CNN
-F 1 "GND" H 3655 727 50  0000 C CNN
-F 2 "" H 3650 900 50  0001 C CNN
-F 3 "" H 3650 900 50  0001 C CNN
-	1    3650 900 
+P 8350 900
+F 0 "#PWR0134" H 8350 650 50  0001 C CNN
+F 1 "GND" H 8355 727 50  0000 C CNN
+F 2 "" H 8350 900 50  0001 C CNN
+F 3 "" H 8350 900 50  0001 C CNN
+	1    8350 900 
 	1    0    0    -1  
 $EndComp
-Wire Notes Line
-	3800 1250 3800 950 
-Wire Notes Line
-	3800 950  4200 950 
-Wire Notes Line
-	4200 950  4200 500 
-Wire Notes Line
-	1850 1250 3800 1250
 Text Label 3650 2600 0    50   ~ 0
 A7
 Text Label 3650 2500 0    50   ~ 0
@@ -1507,4 +1495,65 @@ Text Label 3650 2000 0    50   ~ 0
 A1
 Text Label 3650 1900 0    50   ~ 0
 A0
+$Comp
+L power:+12V #PWR0135
+U 1 1 5DDD0920
+P 8350 800
+F 0 "#PWR0135" H 8350 650 50  0001 C CNN
+F 1 "+12V" H 8365 973 50  0000 C CNN
+F 2 "" H 8350 800 50  0001 C CNN
+F 3 "" H 8350 800 50  0001 C CNN
+	1    8350 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x04_Male J7
+U 1 1 5DDF74B0
+P 3550 3000
+F 0 "J7" H 3522 2882 50  0000 R CNN
+F 1 "Conn_01x04_Male" H 3522 2973 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 3550 3000 50  0001 C CNN
+F 3 "~" H 3550 3000 50  0001 C CNN
+	1    3550 3000
+	-1   0    0    1   
+$EndComp
+Wire Notes Line
+	3250 1250 1850 1250
+$Comp
+L Connector_Generic:Conn_01x02 J8
+U 1 1 5DE8CCC3
+P 8300 1250
+F 0 "J8" H 8380 1242 50  0000 L CNN
+F 1 "BannanaJack" H 8380 1151 50  0000 L CNN
+F 2 "TTK4155-Embedded-PCB:Banana_Jack_2Pin_15mm_spacing" H 8300 1250 50  0001 C CNN
+F 3 "~" H 8300 1250 50  0001 C CNN
+	1    8300 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0136
+U 1 1 5DE9BBA9
+P 8100 1350
+F 0 "#PWR0136" H 8100 1100 50  0001 C CNN
+F 1 "GND" H 8105 1177 50  0000 C CNN
+F 2 "" H 8100 1350 50  0001 C CNN
+F 3 "" H 8100 1350 50  0001 C CNN
+	1    8100 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR0137
+U 1 1 5DEE3528
+P 8100 1250
+F 0 "#PWR0137" H 8100 1100 50  0001 C CNN
+F 1 "+12V" H 8115 1423 50  0000 C CNN
+F 2 "" H 8100 1250 50  0001 C CNN
+F 3 "" H 8100 1250 50  0001 C CNN
+	1    8100 1250
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	8950 1650 7900 1650
+Wire Notes Line
+	7900 1650 7900 500 
 $EndSCHEMATC

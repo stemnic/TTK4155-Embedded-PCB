@@ -625,13 +625,13 @@ F 3 "" H 4800 4400 50  0001 C CNN
 	1    4800 4400
 	1    0    0    -1  
 $EndComp
-Text Label 5100 2700 0    50   ~ 0
-A8
-Text Label 5100 2800 0    50   ~ 0
-A9
 Text Label 5100 2900 0    50   ~ 0
-A10
+A8
 Text Label 5100 3000 0    50   ~ 0
+A9
+Text Label 5100 2800 0    50   ~ 0
+A10
+Text Label 5100 2700 0    50   ~ 0
 A11
 Text Label 3800 3700 0    50   ~ 0
 A8
@@ -1507,4 +1507,15 @@ Text Label 3650 2000 0    50   ~ 0
 A1
 Text Label 3650 1900 0    50   ~ 0
 A0
+$Comp
+L power:+12V #PWR?
+U 1 1 5DDD0920
+P 3350 1000
+F 0 "#PWR?" H 3350 850 50  0001 C CNN
+F 1 "+12V" H 3365 1173 50  0000 C CNN
+F 2 "" H 3350 1000 50  0001 C CNN
+F 3 "" H 3350 1000 50  0001 C CNN
+	1    3350 1000
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

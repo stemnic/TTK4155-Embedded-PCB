@@ -1,3 +1,4 @@
 (fp_lib_table
   (lib (name SN74ALS573CN)(type Legacy)(uri ${KIPRJMOD}/importedLibs/SN74ALS573CN.mod)(options "")(descr ""))
+  (lib (name TTK4155-Embedded-PCB)(type KiCad)(uri ${KIPRJMOD}/TTK4155-Embedded-PCB.pretty)(options "")(descr ""))
 )
