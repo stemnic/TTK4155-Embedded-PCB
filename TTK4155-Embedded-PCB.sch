@@ -1509,12 +1509,12 @@ $EndComp
 $Comp
 L Connector:Conn_01x04_Male J7
 U 1 1 5DDF74B0
-P 3600 3000
-F 0 "J7" H 3572 2882 50  0000 R CNN
-F 1 "Conn_01x04_Male" H 3572 2973 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 3600 3000 50  0001 C CNN
-F 3 "~" H 3600 3000 50  0001 C CNN
-	1    3600 3000
+P 3700 3000
+F 0 "J7" H 3672 2882 50  0000 R CNN
+F 1 "Conn_01x04_Male" H 3672 2973 50  0001 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 3700 3000 50  0001 C CNN
+F 3 "~" H 3700 3000 50  0001 C CNN
+	1    3700 3000
 	-1   0    0    1   
 $EndComp
 Wire Notes Line
@@ -1558,31 +1558,90 @@ Wire Notes Line
 	7900 1650 7900 500 
 $Comp
 L Device:R R7
-U 1 1 5DF418AD
-P 3850 2700
-F 0 "R7" H 3920 2746 50  0000 L CNN
-F 1 "10K" H 3920 2655 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3780 2700 50  0001 C CNN
-F 3 "~" H 3850 2700 50  0001 C CNN
-	1    3850 2700
-	0    1    1    0   
+U 1 1 5DB3F4E5
+P 700 6450
+F 0 "R7" H 770 6496 50  0000 L CNN
+F 1 "10K" H 770 6405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 630 6450 50  0001 C CNN
+F 3 "~" H 700 6450 50  0001 C CNN
+	1    700  6450
+	-1   0    0    1   
+$EndComp
+Text Label 3350 2800 0    50   ~ 0
+PB0
+Text Label 3350 2900 0    50   ~ 0
+PB1
+Text Label 3350 3000 0    50   ~ 0
+PB2
+Text Label 3350 3100 0    50   ~ 0
+PB3
+Wire Wire Line
+	3350 2800 3500 2800
+Wire Wire Line
+	3350 2900 3500 2900
+Wire Wire Line
+	3350 3000 3500 3000
+Wire Wire Line
+	3350 3100 3500 3100
+$Comp
+L Device:R R8
+U 1 1 5DB7ED57
+P 1000 6450
+F 0 "R8" H 1070 6496 50  0000 L CNN
+F 1 "10K" H 1070 6405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 930 6450 50  0001 C CNN
+F 3 "~" H 1000 6450 50  0001 C CNN
+	1    1000 6450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R9
+U 1 1 5DB7F993
+P 1300 6450
+F 0 "R9" H 1370 6496 50  0000 L CNN
+F 1 "10K" H 1370 6405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1230 6450 50  0001 C CNN
+F 3 "~" H 1300 6450 50  0001 C CNN
+	1    1300 6450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R10
+U 1 1 5DB7F999
+P 1600 6450
+F 0 "R10" H 1670 6496 50  0000 L CNN
+F 1 "10K" H 1670 6405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1530 6450 50  0001 C CNN
+F 3 "~" H 1600 6450 50  0001 C CNN
+	1    1600 6450
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR0138
+U 1 1 5DB8E098
+P 700 6300
+F 0 "#PWR0138" H 700 6150 50  0001 C CNN
+F 1 "+5V" H 715 6473 50  0000 C CNN
+F 2 "" H 700 6300 50  0001 C CNN
+F 3 "" H 700 6300 50  0001 C CNN
+	1    700  6300
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3350 2800 3400 2800
+	1600 6300 1300 6300
+Connection ~ 700  6300
+Connection ~ 1000 6300
 Wire Wire Line
-	3400 2800 3400 2700
+	1000 6300 700  6300
+Connection ~ 1300 6300
 Wire Wire Line
-	3400 2700 3700 2700
-Connection ~ 3400 2800
-Wire Wire Line
-	3350 2900 3400 2900
-Wire Wire Line
-	3350 3000 3400 3000
-Wire Wire Line
-	3350 3100 3400 3100
-Wire Wire Line
-	4000 2700 4000 2850
-Wire Wire Line
-	4000 2850 4350 2850
-Connection ~ 4350 2850
+	1300 6300 1000 6300
+Text Label 700  6600 3    50   ~ 0
+PB0
+Text Label 1000 6600 3    50   ~ 0
+PB1
+Text Label 1300 6600 3    50   ~ 0
+PB2
+Text Label 1600 6600 3    50   ~ 0
+PB3
 $EndSCHEMATC

@@ -1509,12 +1509,12 @@ $EndComp
 $Comp
 L Connector:Conn_01x04_Male J7
 U 1 1 5DDF74B0
-P 3550 3000
-F 0 "J7" H 3522 2882 50  0000 R CNN
-F 1 "Conn_01x04_Male" H 3522 2973 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 3550 3000 50  0001 C CNN
-F 3 "~" H 3550 3000 50  0001 C CNN
-	1    3550 3000
+P 3600 3000
+F 0 "J7" H 3572 2882 50  0000 R CNN
+F 1 "Conn_01x04_Male" H 3572 2973 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 3600 3000 50  0001 C CNN
+F 3 "~" H 3600 3000 50  0001 C CNN
+	1    3600 3000
 	-1   0    0    1   
 $EndComp
 Wire Notes Line
@@ -1556,4 +1556,33 @@ Wire Notes Line
 	8950 1650 7900 1650
 Wire Notes Line
 	7900 1650 7900 500 
+$Comp
+L Device:R R7
+U 1 1 5DF418AD
+P 3850 2700
+F 0 "R7" H 3920 2746 50  0000 L CNN
+F 1 "10K" H 3920 2655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3780 2700 50  0001 C CNN
+F 3 "~" H 3850 2700 50  0001 C CNN
+	1    3850 2700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3350 2800 3400 2800
+Wire Wire Line
+	3400 2800 3400 2700
+Wire Wire Line
+	3400 2700 3700 2700
+Connection ~ 3400 2800
+Wire Wire Line
+	3350 2900 3400 2900
+Wire Wire Line
+	3350 3000 3400 3000
+Wire Wire Line
+	3350 3100 3400 3100
+Wire Wire Line
+	4000 2700 4000 2850
+Wire Wire Line
+	4000 2850 4350 2850
+Connection ~ 4350 2850
 $EndSCHEMATC
