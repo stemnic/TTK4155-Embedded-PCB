@@ -601,20 +601,6 @@ Text Label 3350 5200 0    50   ~ 0
 ~WE
 Text Label 3350 5300 0    50   ~ 0
 ~OE
-Wire Wire Line
-	4100 3700 4100 3900
-Wire Wire Line
-	4100 3900 4300 3900
-Wire Wire Line
-	4050 3800 4050 4000
-Wire Wire Line
-	4050 4000 4300 4000
-Wire Wire Line
-	4000 4100 4300 4100
-Wire Wire Line
-	3950 4200 4300 4200
-Wire Wire Line
-	3950 4000 3950 4200
 $Comp
 L power:GND #PWR0120
 U 1 1 5DA47FCD
@@ -628,14 +614,6 @@ F 3 "" H 5550 3100 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5550 3100 5100 3100
-Wire Wire Line
-	3350 3700 4100 3700
-Wire Wire Line
-	3350 3800 4050 3800
-Wire Wire Line
-	3350 3900 4000 3900
-Wire Wire Line
-	3350 4000 3950 4000
 $Comp
 L Logic_Programmable:GAL16V8 U4
 U 1 1 5D9608E7
@@ -647,15 +625,13 @@ F 3 "" H 4800 4400 50  0001 C CNN
 	1    4800 4400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4000 3900 4000 4100
-Text Label 5100 2700 0    50   ~ 0
-A8
-Text Label 5100 2800 0    50   ~ 0
-A9
 Text Label 5100 2900 0    50   ~ 0
-A10
+A8
 Text Label 5100 3000 0    50   ~ 0
+A9
+Text Label 5100 2800 0    50   ~ 0
+A10
+Text Label 5100 2700 0    50   ~ 0
 A11
 Text Label 3800 3700 0    50   ~ 0
 A8
@@ -725,8 +701,6 @@ Wire Notes Line
 Text Notes 800  1650 0    50   ~ 0
 Reset button
 Wire Notes Line
-	1850 1250 3250 1250
-Wire Notes Line
 	3250 1250 3250 500 
 Text Notes 1900 1250 0    50   ~ 0
 12V to 5V LDO
@@ -782,22 +756,6 @@ Wire Wire Line
 	10850 3300 10950 3300
 Wire Wire Line
 	10050 3200 10000 3200
-Text Label 3650 1900 0    50   ~ 0
-A0
-Text Label 3650 2000 0    50   ~ 0
-A1
-Text Label 3650 2100 0    50   ~ 0
-A2
-Text Label 3650 2200 0    50   ~ 0
-A3
-Text Label 3650 2300 0    50   ~ 0
-A4
-Text Label 3650 2400 0    50   ~ 0
-A5
-Text Label 3650 2500 0    50   ~ 0
-A6
-Text Label 3650 2600 0    50   ~ 0
-A7
 Text Label 10950 2700 0    50   ~ 0
 A0
 Text Label 10950 2800 0    50   ~ 0
@@ -873,7 +831,7 @@ U 1 1 5DC31502
 P 9250 2700
 F 0 "J4" H 9358 2981 50  0000 C CNN
 F 1 "Conn_01x04_Male" H 9358 2890 50  0000 C CNN
-F 2 "Connector_PinHeader_2.00mm:PinHeader_1x04_P2.00mm_Vertical" H 9250 2700 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 9250 2700 50  0001 C CNN
 F 3 "~" H 9250 2700 50  0001 C CNN
 	1    9250 2700
 	1    0    0    -1  
@@ -888,62 +846,40 @@ Wire Wire Line
 	9450 2900 10050 2900
 Text Notes 10150 3700 0    50   ~ 0
 ADC Converter
-$Comp
-L Connector:Conn_01x08_Male J3
-U 1 1 5DC60D2B
-P 9200 4250
-F 0 "J3" H 9308 4731 50  0000 C CNN
-F 1 "Conn_01x08_Male" H 9308 4640 50  0000 C CNN
-F 2 "Connector_PinHeader_2.00mm:PinHeader_1x08_P2.00mm_Vertical" H 9200 4250 50  0001 C CNN
-F 3 "~" H 9200 4250 50  0001 C CNN
-	1    9200 4250
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	9400 3950 9600 3950
+	9750 3950 9950 3950
 Wire Wire Line
-	9400 4050 9600 4050
+	9750 4050 9950 4050
 Wire Wire Line
-	9400 4150 9600 4150
+	9750 4150 9950 4150
 Wire Wire Line
-	9400 4250 9600 4250
+	9750 4250 9950 4250
 Wire Wire Line
-	9400 4350 9600 4350
+	9750 4350 9950 4350
 Wire Wire Line
-	9400 4450 9600 4450
+	9750 4450 9950 4450
 Wire Wire Line
-	9400 4550 9600 4550
+	9750 4550 9950 4550
 Wire Wire Line
-	9400 4650 9600 4650
-Text Label 9600 3950 0    50   ~ 0
+	9750 4650 9950 4650
+Text Label 9950 3950 0    50   ~ 0
 A0
-Text Label 9600 4050 0    50   ~ 0
+Text Label 9950 4050 0    50   ~ 0
 A1
-Text Label 9600 4150 0    50   ~ 0
+Text Label 9950 4150 0    50   ~ 0
 A2
-Text Label 9600 4250 0    50   ~ 0
+Text Label 9950 4250 0    50   ~ 0
 A3
-Text Label 9600 4350 0    50   ~ 0
+Text Label 9950 4350 0    50   ~ 0
 A4
-Text Label 9600 4450 0    50   ~ 0
+Text Label 9950 4450 0    50   ~ 0
 A5
-Text Label 9600 4550 0    50   ~ 0
+Text Label 9950 4550 0    50   ~ 0
 A6
-Text Label 9600 4650 0    50   ~ 0
+Text Label 9950 4650 0    50   ~ 0
 A7
-Text Notes 9200 4750 0    50   ~ 0
+Text Notes 10150 3950 0    50   ~ 0
 Memory bus to ExtOLED
-$Comp
-L Connector:Conn_01x02_Male J5
-U 1 1 5DCBC334
-P 10450 4050
-F 0 "J5" H 10422 3932 50  0000 R CNN
-F 1 "Conn_01x02_Male" H 10422 4023 50  0000 R CNN
-F 2 "Connector_PinHeader_2.00mm:PinHeader_1x02_P2.00mm_Vertical" H 10450 4050 50  0001 C CNN
-F 3 "~" H 10450 4050 50  0001 C CNN
-	1    10450 4050
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	5300 4100 5500 4100
 Wire Wire Line
@@ -952,15 +888,13 @@ Text Label 5500 4100 0    50   ~ 0
 OLED_CMD
 Text Label 5500 4200 0    50   ~ 0
 OLED_DATA
-Text Label 10250 4050 2    50   ~ 0
+Text Label 9750 4850 0    50   ~ 0
 OLED_CMD
-Text Label 10250 3950 2    50   ~ 0
+Text Label 9750 4750 0    50   ~ 0
 OLED_DATA
 Wire Notes Line
-	8950 4800 11200 4800
-Wire Notes Line
-	8950 500  8950 4800
-Text Notes 10000 4250 0    50   ~ 0
+	8950 4950 11200 4950
+Text Notes 10250 4850 0    50   ~ 0
 Selects between data \nand cmd registert\n
 Wire Wire Line
 	4800 3700 5000 3700
@@ -1452,4 +1386,125 @@ F 3 "https://ntnu.blackboard.com/bbcswebdav/pid-754255-dt-content-rid-21917677_1
 	1    4750 2100
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector:Conn_01x10_Male J3
+U 1 1 5DC3E321
+P 9550 4350
+F 0 "J3" H 9658 4931 50  0000 C CNN
+F 1 "Conn_01x10_Male" H 9658 4840 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical" H 9550 4350 50  0001 C CNN
+F 3 "~" H 9550 4350 50  0001 C CNN
+	1    9550 4350
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	8950 500  8950 4950
+$Comp
+L Device:R R6
+U 1 1 5DC5E47D
+P 10900 5700
+F 0 "R6" H 10970 5746 50  0000 L CNN
+F 1 "60R" H 10970 5655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 10830 5700 50  0001 C CNN
+F 3 "~" H 10900 5700 50  0001 C CNN
+	1    10900 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10800 5800 10800 5850
+Wire Wire Line
+	10800 5850 10900 5850
+Wire Wire Line
+	10800 5600 10800 5550
+Wire Wire Line
+	10800 5550 10900 5550
+Wire Wire Line
+	3350 4000 3800 4000
+Wire Wire Line
+	3350 3900 3800 3900
+Wire Wire Line
+	3350 3800 3800 3800
+Wire Wire Line
+	3350 3700 3800 3700
+Text Label 4300 3900 2    50   ~ 0
+A11
+Text Label 4300 4000 2    50   ~ 0
+A10
+Text Label 4300 4100 2    50   ~ 0
+A9
+$Comp
+L Connector:Screw_Terminal_01x02 J5
+U 1 1 5DCCBD1E
+P 11100 6300
+F 0 "J5" V 11100 5950 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" V 11250 5550 50  0000 L CNN
+F 2 "TerminalBlock_MetzConnect:TerminalBlock_MetzConnect_Type073_RT02602HBLU_1x02_P5.08mm_Horizontal" H 11100 6300 50  0001 C CNN
+F 3 "~" H 11100 6300 50  0001 C CNN
+	1    11100 6300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10900 5850 11000 5850
+Wire Wire Line
+	11000 5850 11000 6100
+Connection ~ 10900 5850
+Wire Wire Line
+	11100 5850 11150 5850
+Wire Wire Line
+	11150 5850 11150 5550
+Wire Wire Line
+	11150 5550 10900 5550
+Wire Wire Line
+	11100 5850 11100 6100
+Connection ~ 10900 5550
+$Comp
+L Connector:Screw_Terminal_01x02 J6
+U 1 1 5DD11A7E
+P 3550 700
+F 0 "J6" V 3550 350 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" V 3700 100 50  0000 L CNN
+F 2 "TerminalBlock_MetzConnect:TerminalBlock_MetzConnect_Type073_RT02602HBLU_1x02_P5.08mm_Horizontal" H 3550 700 50  0001 C CNN
+F 3 "~" H 3550 700 50  0001 C CNN
+	1    3550 700 
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3550 900  3550 1000
+Wire Wire Line
+	3550 1000 3350 1000
+$Comp
+L power:GND #PWR0134
+U 1 1 5DD5A4AB
+P 3650 900
+F 0 "#PWR0134" H 3650 650 50  0001 C CNN
+F 1 "GND" H 3655 727 50  0000 C CNN
+F 2 "" H 3650 900 50  0001 C CNN
+F 3 "" H 3650 900 50  0001 C CNN
+	1    3650 900 
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	3800 1250 3800 950 
+Wire Notes Line
+	3800 950  4200 950 
+Wire Notes Line
+	4200 950  4200 500 
+Wire Notes Line
+	1850 1250 3800 1250
+Text Label 3650 2600 0    50   ~ 0
+A7
+Text Label 3650 2500 0    50   ~ 0
+A6
+Text Label 3650 2400 0    50   ~ 0
+A5
+Text Label 3650 2300 0    50   ~ 0
+A4
+Text Label 3650 2200 0    50   ~ 0
+A3
+Text Label 3650 2100 0    50   ~ 0
+A2
+Text Label 3650 2000 0    50   ~ 0
+A1
+Text Label 3650 1900 0    50   ~ 0
+A0
 $EndSCHEMATC
