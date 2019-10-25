@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name ByggernCustom)(type Legacy)(uri ${KIPRJMOD}/ByggernCustom.lib)(options "")(descr ""))
+  (lib (name SN74ALS573CN)(type Legacy)(uri ${KIPRJMOD}/importedLibs/SN74ALS573CN.lib)(options "")(descr ""))
+)
