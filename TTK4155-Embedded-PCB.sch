@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:TTK4155-Embedded-PCB-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -505,25 +505,25 @@ $EndComp
 $Comp
 L power:+5V #PWR0116
 U 1 1 5D9B7D1E
-P 5000 3700
-F 0 "#PWR0116" H 5000 3550 50  0001 C CNN
-F 1 "+5V" H 5015 3873 50  0000 C CNN
-F 2 "" H 5000 3700 50  0001 C CNN
-F 3 "" H 5000 3700 50  0001 C CNN
-	1    5000 3700
+P 5050 4200
+F 0 "#PWR0116" H 5050 4050 50  0001 C CNN
+F 1 "+5V" H 5065 4373 50  0000 C CNN
+F 2 "" H 5050 4200 50  0001 C CNN
+F 3 "" H 5050 4200 50  0001 C CNN
+	1    5050 4200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5500 3900 5300 3900
+	5550 4400 5350 4400
 $Comp
 L power:GND #PWR0117
 U 1 1 5D9BFE96
-P 4800 5100
-F 0 "#PWR0117" H 4800 4850 50  0001 C CNN
-F 1 "GND" H 4805 4927 50  0000 C CNN
-F 2 "" H 4800 5100 50  0001 C CNN
-F 3 "" H 4800 5100 50  0001 C CNN
-	1    4800 5100
+P 4850 5600
+F 0 "#PWR0117" H 4850 5350 50  0001 C CNN
+F 1 "GND" H 4855 5427 50  0000 C CNN
+F 2 "" H 4850 5600 50  0001 C CNN
+F 3 "" H 4850 5600 50  0001 C CNN
+	1    4850 5600
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -583,7 +583,7 @@ Wire Wire Line
 Connection ~ 5650 650 
 Wire Wire Line
 	5650 650  5700 650 
-Text Label 5500 3900 0    50   ~ 0
+Text Label 5550 4400 0    50   ~ 0
 CS_RAM
 Text Label 4150 3350 0    50   ~ 0
 CS_RAM
@@ -617,12 +617,12 @@ Wire Wire Line
 $Comp
 L Logic_Programmable:GAL16V8 U4
 U 1 1 5D9608E7
-P 4800 4400
-F 0 "U4" H 4800 5281 50  0000 C CNN
-F 1 "GAL16V8" H 4800 5190 50  0000 C CNN
-F 2 "Package_DIP:DIP-20_W7.62mm_Socket_LongPads" H 4800 4400 50  0001 C CNN
-F 3 "" H 4800 4400 50  0001 C CNN
-	1    4800 4400
+P 4850 4900
+F 0 "U4" H 4850 5781 50  0000 C CNN
+F 1 "GAL16V8" H 4850 5690 50  0000 C CNN
+F 2 "Package_DIP:DIP-20_W7.62mm_Socket_LongPads" H 4850 4900 50  0001 C CNN
+F 3 "" H 4850 4900 50  0001 C CNN
+	1    4850 4900
 	1    0    0    -1  
 $EndComp
 Text Label 5100 2900 0    50   ~ 0
@@ -641,11 +641,9 @@ Text Label 3800 3900 0    50   ~ 0
 A10
 Text Label 3800 4000 0    50   ~ 0
 A11
-Wire Notes Line
-	8950 2050 11200 2050
 Text Notes 10150 2050 0    50   ~ 0
 UART <-> RS232
-Text Notes 5500 2850 0    50   ~ 0
+Text Notes 5300 2950 0    50   ~ 0
 External 64K Memory
 $Comp
 L Device:C C8
@@ -701,8 +699,8 @@ Wire Notes Line
 Text Notes 800  1650 0    50   ~ 0
 Reset button
 Wire Notes Line
-	3250 1250 3250 500 
-Text Notes 1900 1250 0    50   ~ 0
+	3250 1350 3250 500 
+Text Notes 1900 1350 0    50   ~ 0
 12V to 5V LDO
 $Comp
 L ByggernCustom:ADC0844 U9
@@ -735,8 +733,8 @@ INT0
 Text Label 3350 4800 0    50   ~ 0
 INT0
 Wire Wire Line
-	5300 4000 5500 4000
-Text Label 5500 4000 0    50   ~ 0
+	5350 4500 5550 4500
+Text Label 5550 4500 0    50   ~ 0
 CS_ADC
 Text Label 9950 2500 2    50   ~ 0
 CS_ADC
@@ -881,12 +879,12 @@ A7
 Text Notes 10150 3950 0    50   ~ 0
 Memory bus to ExtOLED
 Wire Wire Line
-	5300 4100 5500 4100
+	5350 4600 5550 4600
 Wire Wire Line
-	5300 4200 5500 4200
-Text Label 5500 4100 0    50   ~ 0
+	5350 4700 5550 4700
+Text Label 5550 4600 0    50   ~ 0
 OLED_CMD
-Text Label 5500 4200 0    50   ~ 0
+Text Label 5550 4700 0    50   ~ 0
 OLED_DATA
 Text Label 9750 4850 0    50   ~ 0
 OLED_CMD
@@ -897,7 +895,7 @@ Wire Notes Line
 Text Notes 10250 4850 0    50   ~ 0
 Selects between data \nand cmd registert\n
 Wire Wire Line
-	4800 3700 5000 3700
+	4850 4200 5050 4200
 Wire Wire Line
 	4800 550  5700 550 
 $Comp
@@ -1426,11 +1424,11 @@ Wire Wire Line
 	3350 3800 3800 3800
 Wire Wire Line
 	3350 3700 3800 3700
-Text Label 4300 3900 2    50   ~ 0
+Text Label 4350 4400 2    50   ~ 0
 A11
-Text Label 4300 4000 2    50   ~ 0
+Text Label 4350 4500 2    50   ~ 0
 A10
-Text Label 4300 4100 2    50   ~ 0
+Text Label 4350 4600 2    50   ~ 0
 A9
 $Comp
 L Connector:Screw_Terminal_01x02 J5
@@ -1460,23 +1458,23 @@ Connection ~ 10900 5550
 $Comp
 L Connector:Screw_Terminal_01x02 J6
 U 1 1 5DD11A7E
-P 8550 800
-F 0 "J6" V 8650 700 50  0000 L CNN
-F 1 "Screw_Terminal_01x02" V 8750 200 50  0001 L CNN
-F 2 "TerminalBlock_MetzConnect:TerminalBlock_MetzConnect_Type073_RT02602HBLU_1x02_P5.08mm_Horizontal" H 8550 800 50  0001 C CNN
-F 3 "~" H 8550 800 50  0001 C CNN
-	1    8550 800 
+P 8550 1000
+F 0 "J6" V 8650 900 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" V 8750 400 50  0001 L CNN
+F 2 "TerminalBlock_MetzConnect:TerminalBlock_MetzConnect_Type073_RT02602HBLU_1x02_P5.08mm_Horizontal" H 8550 1000 50  0001 C CNN
+F 3 "~" H 8550 1000 50  0001 C CNN
+	1    8550 1000
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0134
 U 1 1 5DD5A4AB
-P 8350 900
-F 0 "#PWR0134" H 8350 650 50  0001 C CNN
-F 1 "GND" H 8355 727 50  0000 C CNN
-F 2 "" H 8350 900 50  0001 C CNN
-F 3 "" H 8350 900 50  0001 C CNN
-	1    8350 900 
+P 8350 1100
+F 0 "#PWR0134" H 8350 850 50  0001 C CNN
+F 1 "GND" H 8355 927 50  0000 C CNN
+F 2 "" H 8350 1100 50  0001 C CNN
+F 3 "" H 8350 1100 50  0001 C CNN
+	1    8350 1100
 	1    0    0    -1  
 $EndComp
 Text Label 3650 2600 0    50   ~ 0
@@ -1498,64 +1496,60 @@ A0
 $Comp
 L power:+12V #PWR0135
 U 1 1 5DDD0920
-P 8350 800
-F 0 "#PWR0135" H 8350 650 50  0001 C CNN
-F 1 "+12V" H 8365 973 50  0000 C CNN
-F 2 "" H 8350 800 50  0001 C CNN
-F 3 "" H 8350 800 50  0001 C CNN
-	1    8350 800 
+P 8350 1000
+F 0 "#PWR0135" H 8350 850 50  0001 C CNN
+F 1 "+12V" H 8365 1173 50  0000 C CNN
+F 2 "" H 8350 1000 50  0001 C CNN
+F 3 "" H 8350 1000 50  0001 C CNN
+	1    8350 1000
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:Conn_01x04_Male J7
 U 1 1 5DDF74B0
-P 3700 3000
-F 0 "J7" H 3672 2882 50  0000 R CNN
-F 1 "Conn_01x04_Male" H 3672 2973 50  0001 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 3700 3000 50  0001 C CNN
-F 3 "~" H 3700 3000 50  0001 C CNN
-	1    3700 3000
+P 8700 2900
+F 0 "J7" H 8672 2782 50  0000 R CNN
+F 1 "Conn_01x04_Male" H 8672 2873 50  0001 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 8700 2900 50  0001 C CNN
+F 3 "~" H 8700 2900 50  0001 C CNN
+	1    8700 2900
 	-1   0    0    1   
 $EndComp
 Wire Notes Line
-	3250 1250 1850 1250
+	3250 1350 1850 1350
 $Comp
 L Connector_Generic:Conn_01x02 J8
 U 1 1 5DE8CCC3
-P 8300 1250
-F 0 "J8" H 8380 1242 50  0000 L CNN
-F 1 "BannanaJack" H 8380 1151 50  0000 L CNN
-F 2 "TTK4155-Embedded-PCB:Banana_Jack_2Pin_15mm_spacing" H 8300 1250 50  0001 C CNN
-F 3 "~" H 8300 1250 50  0001 C CNN
-	1    8300 1250
+P 8300 1450
+F 0 "J8" H 8380 1442 50  0000 L CNN
+F 1 "BannanaJack" H 8380 1351 50  0000 L CNN
+F 2 "TTK4155-Embedded-PCB:Banana_Jack_2Pin_15mm_spacing" H 8300 1450 50  0001 C CNN
+F 3 "~" H 8300 1450 50  0001 C CNN
+	1    8300 1450
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0136
 U 1 1 5DE9BBA9
-P 8100 1350
-F 0 "#PWR0136" H 8100 1100 50  0001 C CNN
-F 1 "GND" H 8105 1177 50  0000 C CNN
-F 2 "" H 8100 1350 50  0001 C CNN
-F 3 "" H 8100 1350 50  0001 C CNN
-	1    8100 1350
+P 8100 1550
+F 0 "#PWR0136" H 8100 1300 50  0001 C CNN
+F 1 "GND" H 8105 1377 50  0000 C CNN
+F 2 "" H 8100 1550 50  0001 C CNN
+F 3 "" H 8100 1550 50  0001 C CNN
+	1    8100 1550
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+12V #PWR0137
 U 1 1 5DEE3528
-P 8100 1250
-F 0 "#PWR0137" H 8100 1100 50  0001 C CNN
-F 1 "+12V" H 8115 1423 50  0000 C CNN
-F 2 "" H 8100 1250 50  0001 C CNN
-F 3 "" H 8100 1250 50  0001 C CNN
-	1    8100 1250
+P 8100 1450
+F 0 "#PWR0137" H 8100 1300 50  0001 C CNN
+F 1 "+12V" H 8115 1623 50  0000 C CNN
+F 2 "" H 8100 1450 50  0001 C CNN
+F 3 "" H 8100 1450 50  0001 C CNN
+	1    8100 1450
 	1    0    0    -1  
 $EndComp
-Wire Notes Line
-	8950 1650 7900 1650
-Wire Notes Line
-	7900 1650 7900 500 
 $Comp
 L Device:R R7
 U 1 1 5DB3F4E5
@@ -1575,14 +1569,6 @@ Text Label 3350 3000 0    50   ~ 0
 PB2
 Text Label 3350 3100 0    50   ~ 0
 PB3
-Wire Wire Line
-	3350 2800 3500 2800
-Wire Wire Line
-	3350 2900 3500 2900
-Wire Wire Line
-	3350 3000 3500 3000
-Wire Wire Line
-	3350 3100 3500 3100
 $Comp
 L Device:R R8
 U 1 1 5DB7ED57
@@ -1644,4 +1630,61 @@ Text Label 1300 6600 3    50   ~ 0
 PB2
 Text Label 1600 6600 3    50   ~ 0
 PB3
+$Comp
+L power:GND #PWR?
+U 1 1 5DD0858E
+P 9650 850
+F 0 "#PWR?" H 9650 600 50  0001 C CNN
+F 1 "GND" H 9655 677 50  0000 C CNN
+F 2 "" H 9650 850 50  0001 C CNN
+F 3 "" H 9650 850 50  0001 C CNN
+	1    9650 850 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9650 850  9500 850 
+$Comp
+L power:GND #PWR?
+U 1 1 5DD37A87
+P 2900 1100
+F 0 "#PWR?" H 2900 850 50  0001 C CNN
+F 1 "GND" H 2905 927 50  0000 C CNN
+F 2 "" H 2900 1100 50  0001 C CNN
+F 3 "" H 2900 1100 50  0001 C CNN
+	1    2900 1100
+	1    0    0    -1  
+$EndComp
+Connection ~ 2900 1100
+Text Label 8350 3000 0    50   ~ 0
+~WE
+Wire Wire Line
+	8150 3000 8500 3000
+Wire Wire Line
+	8150 2900 8500 2900
+Wire Wire Line
+	8150 2800 8500 2800
+Wire Wire Line
+	8150 2700 8500 2700
+Text Notes 4150 5900 0    50   ~ 0
+Memory line chipselect controller\n
+Text Notes 850  4450 0    50   ~ 0
+JTAG programming headers
+Text Notes 4250 1050 0    50   ~ 0
+Latch for external memory
+Text Notes 950  6250 0    50   ~ 0
+Input pullup resistors
+Text Label 8150 2700 0    50   ~ 0
+PB0
+Text Label 8150 2800 0    50   ~ 0
+PB1
+Text Label 8150 2900 0    50   ~ 0
+PB2
+Text Label 8150 3000 0    50   ~ 0
+PB3
+Wire Notes Line
+	7900 500  7900 3700
+Text Notes 7950 2600 0    50   ~ 0
+Microcontroller inputpin \nfrom IO-Board
+Wire Notes Line
+	7900 2050 11200 2050
 $EndSCHEMATC
